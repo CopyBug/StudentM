@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">StudentM</string>
+    <string name="Home">首页</string>
+    <string name="Prime">素拓分查询</string>
+    <string name="EvenRg">活动报名</string>
+    <string name="Rgdetail">活动详情</string>
 </resources>
