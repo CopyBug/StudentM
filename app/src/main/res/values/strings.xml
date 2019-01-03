@@ -4,4 +4,5 @@
     <string name="Prime">素拓分查询</string>
     <string name="EvenRg">活动报名</string>
     <string name="Rgdetail">活动详情</string>
+    <string name="Out">退出登录</string>
 </resources>

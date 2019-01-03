@@ -29,4 +29,5 @@ dependencies {
     implementation 'com.squareup.okio:okio:2.1.0'
     implementation 'org.kie.modules:com-google-code-gson:6.5.0.Final'
     implementation 'com.android.support:design:28.0.0'
+    implementation 'org.kie.modules:org-jsoup:6.5.0.Final'
 }

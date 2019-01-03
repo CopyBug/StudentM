@@ -42,10 +42,9 @@ public  class MyOkhttp {
         String string = response.body().string();
         return string;
     }
-   static  public Object GetClass(Response response,Class MyClass) throws IOException {
+   static  public <T>T GetClass(Response response,Class<T> MyClass) throws IOException {
         String getbody = Getbody(response);
-        Object object=new Gson().fromJson(getbody,MyClass);
-        return object;
+        return new Gson().fromJson(getbody,MyClass);
     }
     static  public void PrintError(Exception e){
         Log.i("PrintError", e.toString());
