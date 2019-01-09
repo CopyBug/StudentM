@@ -2,7 +2,7 @@ package com.example.sion.studentm.Until;
 
 import android.util.Log;
 
-import com.example.sion.studentm.JAVABeans.Loginmsg;
+import com.example.sion.studentm.JAVABeans.Studentlogin;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -20,11 +20,11 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class OkhttpSchool {
-    public Loginmsg getLoginmsg() {
+    /*public Studentlogin getLoginmsg() {
         return loginmsg;
     }
 
-    public void setLoginmsg(Loginmsg loginmsg) {
+    public void setLoginmsg(Studentlogin loginmsg) {
         this.loginmsg = loginmsg;
     }
 
@@ -36,7 +36,7 @@ public class OkhttpSchool {
         this.okHttpClient = okHttpClient;
     }
 
-    private   Loginmsg loginmsg=null;
+    private Studentlogin loginmsg=null;
    private   OkHttpClient okHttpClient=null;
     public  void Coming(){
         Log.i("Coming()", "Coming: ");
@@ -67,7 +67,7 @@ public class OkhttpSchool {
                 try {
                     Response execute = okHttpClient.newCall(request).execute();
                     String string = execute.body().string();
-                    loginmsg = new Gson().fromJson(string, Loginmsg.class);
+                    loginmsg = new Gson().fromJson(string, Studentlogin.class);
                     Log.i("loginmsg.getMsg()", loginmsg.getMsg());
 
 
@@ -79,5 +79,5 @@ public class OkhttpSchool {
         }).start();
 
     }
-
+*/
 }

@@ -1,7 +1,5 @@
 package com.example.sion.studentm.Fragment;
 
-
-
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,14 +7,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.example.sion.studentm.R;
 
-public class Fragment01 extends Fragment {
+public class Fragment02Class extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater
-                .inflate(R.layout.fragment01, container, false);
+                .inflate(R.layout.fragment02kebiao, container, false);
         return view;
     }
 }

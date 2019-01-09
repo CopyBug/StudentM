@@ -1,22 +1,22 @@
 package com.example.sion.studentm.JAVABeans;
 
 public class BaseBean {
-    private String RESULT;
-    private String ERRMSG;
+    private Boolean result;
+    private String errsg;
 
-    public String getRESULT() {
-        return RESULT;
+    public Boolean getResult() {
+        return result;
     }
 
-    public void setRESULT(String RESULT) {
-        this.RESULT = RESULT;
+    public void setResult(Boolean result) {
+        this.result = result;
     }
 
-    public String getERRMSG() {
-        return ERRMSG;
+    public String getErrsg() {
+        return errsg;
     }
 
-    public void setERRMSG(String ERRMSG) {
-        this.ERRMSG = ERRMSG;
+    public void setErrsg(String errsg) {
+        this.errsg = errsg;
     }
 }

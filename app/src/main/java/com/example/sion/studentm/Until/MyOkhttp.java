@@ -17,7 +17,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public  class MyOkhttp {
-
+    static   private  String id="http://139.199.190.21";
     static RequestBody requestBody(JSONObject jsonObject) {
         return RequestBody.create(MediaType.parse("application/json; charset=utf-8"), jsonObject.toString());
     }
@@ -28,12 +28,12 @@ public  class MyOkhttp {
     static OkHttpClient okHttpClient=new OkHttpClient();
 
     static  public Call GetBody(String url) throws IOException {
-        Request request=new Request.Builder().get().url(url).build();
+        Request request=new Request.Builder().get().url(id+url).build();
         Call call = okHttpClient.newCall(request);
         return call;
     }
     static  public Call PostBody(String url,String Json) throws IOException, JSONException {
-        Request request=new Request.Builder().post(requestBody(buildJSON(Json))).url(url).build();
+        Request request=new Request.Builder().post(requestBody(buildJSON(Json))).url(id+url).build();
         Call call = okHttpClient.newCall(request);
         return call;
     }

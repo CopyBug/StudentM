@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00f"
+    android:orientation="vertical">
+    <com.qmuiteam.qmui.widget.QMUIProgressBar
 
-</android.support.constraint.ConstraintLayout>
+        android:id="@+id/Myprocess"
+        app:qmui_value="1"
+        app:qmui_progress_color="#b73019"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:qmui_background_color="#e7dd85"
+      />
+<WebView
+
+    android:background="#eac56f"
+    android:id="@+id/web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></WebView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

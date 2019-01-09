@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+   >
+<LinearLayout
+    android:orientation="horizontal"
+    android:background="#8BC34A"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/MyTouxiang"
+            android:layout_width="110dp"
+            app:qmui_corner_radius="80dp"
+
+            android:layout_height="110dp"
+            android:src="@drawable/school02">
+        </com.qmuiteam.qmui.widget.QMUIRadiusImageView>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/MyTouxiang"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="25dp"
+                android:textColor="@color/qmui_s_switch_text_color"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的个人信息"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:ignore="Suspicious0dp">
+                <TextView
+
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："/>
+                <EditText
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/name"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+
+                    android:text="梁浩文"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:ignore="Suspicious0dp">
+                <TextView
+
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学号："/>
+                <EditText
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/xuehao"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="1711605009"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:ignore="Suspicious0dp">
+                <TextView
+
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="专业："/>
+                <EditText
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/Class"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="移动171"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+    <android.support.design.widget.TabLayout
+        app:tabIndicatorColor="@color/btgreen"
+        app:tabSelectedTextColor="@color/btgreen"
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+    <com.example.sion.studentm.MySelfView.MyViewPage
+
+        android:id="@+id/MyViewP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.sion.studentm.MySelfView.MyViewPage>
+
+
+
+</LinearLayout>

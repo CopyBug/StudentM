@@ -5,13 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginMa">
-<ImageView
+<android.support.v7.widget.CardView
+    android:layout_centerInParent="true"
+    app:cardCornerRadius="100dp"
+   app:cardBackgroundColor="@color/baggreem"
+    android:layout_width="500dp"
+    app:cardElevation="20dp"
+    android:layout_height="500dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<com.qmuiteam.qmui.widget.QMUIRadiusImageView
     android:layout_marginTop="50dp"
     android:id="@+id/HeadIm"
     android:layout_centerHorizontal="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/myschool"/>
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    app:qmui_corner_radius="20dp"
+
+    android:background="@drawable/myschool"
+    />
     <FrameLayout
         android:layout_below="@id/HeadIm"
         android:layout_width="match_parent"
@@ -37,6 +51,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/user"/>
                 <EditText
+                    android:maxLength="10"
                     android:id="@+id/user"
                     android:inputType="number"
                     android:gravity="center_horizontal"
@@ -88,4 +103,7 @@
         </LinearLayout>
 
     </FrameLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
 </RelativeLayout>
