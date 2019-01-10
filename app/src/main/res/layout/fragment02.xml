@@ -27,7 +27,6 @@
             android:src="@drawable/school02">
         </com.qmuiteam.qmui.widget.QMUIRadiusImageView>
         <LinearLayout
-
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/MyTouxiang"
             android:layout_width="match_parent"
